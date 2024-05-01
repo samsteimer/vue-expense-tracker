@@ -1,18 +1,21 @@
 <template>
-    <h3>Add new transaction</h3>
-    <div class="container border">
+    <div class="container rounded border border-2 mb-1">
+        <h3>Add new transaction</h3>
+    
         <form @submit.prevent="onSubmit">
-            <div class="input-group m-2">
+            <div class="form-group">
                 <label for="text">Text</label>
                 <input type="text" class="form-control" id="text" v-model="text" placeholder="Enter text..." />
             </div>
-            <div class="input-group mb-3">
+            <div class="form-group"> 
                 <label for="amount" class="form-label">Amount</label>
-                <span class="input-group-text">$</span>
-                <input type="text" class="form-control" id="amount" aria-describedby="amountHelp" v-model="amount" placeholder="Enter amount...">
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" id="amount" aria-describedby="amountHelp" v-model="amount" placeholder="Enter amount...">
+                </div>
                 <small id="amountHelp" class="form-text text-muted">(negative - expense, positive - income)</small>
             </div>
-            <div class="input-group mb-3">
+            <div class="form-group mb-2">
                 <button class="btn btn-outline-primary">Add transaction</button>
             </div>
         </form>

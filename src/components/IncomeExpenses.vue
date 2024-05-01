@@ -1,12 +1,12 @@
 <template>
-    <div>
-        <div>
+    <div class="container rounded border border-2 mb-1">
+        <div class="text-success">
             <h4>Income</h4>
-            <p id="money-plus" class="money plus">+${{ income }}</p>
+            <p id="money-plus" class="money plus">$ {{ income }}</p>
         </div>
-        <div>
+        <div class="text-danger">
             <h4>Expense</h4>
-            <p id="money-minus" class="money minus">-${{ expenses }}</p>
+            <p id="money-minus" class="money minus">$ {{ expenses }}</p>
         </div>
     </div>
 </template>

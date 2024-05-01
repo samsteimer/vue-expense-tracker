@@ -1,6 +1,7 @@
 <template>
-  <Header />
-  <div class="container">
+  <div class="container-sm" style="max-width: 500px">
+    <Header />
+  
     <Balance :total="+total" />
     <IncomeExpenses :income="+income" :expenses="+expenses" />
     <TransactionList :transactions="transactions" @transactionDeleted="handleTransactionDeleted" />
